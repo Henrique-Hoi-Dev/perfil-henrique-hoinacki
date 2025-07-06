@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Header from '../organisms/Header';
 import TechnologiesSection from '../organisms/TechnologiesSection';
-import Button from '../atoms/Button';
 import SocialLink from '../molecules/SocialLink';
 import { personalInfo, summary } from '../../data/curriculum';
 import avatarImage from '../../assets/avatar-1.jpg';
@@ -118,11 +118,14 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              <Button href="/perfil" className="mr-4">
+              <Link
+                to="/perfil"
+                className="inline-block bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 mr-4"
+              >
                 Ver Currículo
-              </Button>
+              </Link>
               <a
-                href="/Henrique_Hoinacki_CV.pdf"
+                href="/perfil-henrique-hoinacki/Henrique_Hoinacki_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200"
