@@ -38,8 +38,8 @@ export const personalInfo = {
   location: 'Santo André, São Paulo – Brasil',
   email: 'riqueah@gmail.com',
   phone: '(46) 991195068',
-  linkedin: 'https://linkedin.com/in/henrique-hoinacki',
-  github: 'https://github.com/henrique-hoinacki',
+  linkedin: 'https://linkedin.com/in/henrique-hoinacki-a98b851a5',
+  github: 'https://github.com/Henrique-Hoi-Dev',
   whatsapp: 'https://wa.me/5546991195068',
 };
 
