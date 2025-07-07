@@ -7,6 +7,7 @@ import {
   FaWhatsapp,
   FaMapMarkerAlt,
   FaPhone,
+  FaArrowLeft,
 } from 'react-icons/fa';
 import {
   personalInfo,
@@ -61,6 +62,21 @@ const Curriculo = () => {
         {/* Header */}
         <header className="bg-white shadow-sm border-b">
           <div className="max-w-4xl mx-auto px-6 py-8">
+            {/* Botão Voltar */}
+            <motion.div
+              className="mb-6"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <a
+                href="/"
+                className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium transition-colors"
+              >
+                <FaArrowLeft className="w-4 h-4" />
+                Voltar ao Site
+              </a>
+            </motion.div>
             <motion.div
               className="flex flex-col md:flex-row items-center md:items-start gap-6"
               initial={{ opacity: 0, y: 20 }}

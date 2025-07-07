@@ -30,8 +30,6 @@ const CurriculumButtons = ({ className = '' }: CurriculumButtonsProps) => {
 
       <a
         href="/curriculo"
-        target="_blank"
-        rel="noopener noreferrer"
         className="inline-flex items-center justify-center bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 hover:shadow-lg hover:border hover:border-gray-400"
         aria-label="Visualizar currículo em página estruturada"
         title="Visualizar currículo em página estruturada"
