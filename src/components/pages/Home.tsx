@@ -1,9 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import Header from '../organisms/Header';
 import TechnologiesSection from '../organisms/TechnologiesSection';
 import SocialLink from '../molecules/SocialLink';
+import Typewriter from '../atoms/Typewriter';
+import CurriculumButtons from '../molecules/CurriculumButtons';
 import { personalInfo, summary } from '../../data/curriculum';
 import avatarImage from '../../assets/avatar-1.jpg';
 
@@ -78,14 +79,28 @@ const Home = () => {
               {personalInfo.name}
             </motion.h1>
 
-            <motion.h2
-              className="text-2xl md:text-3xl text-primary-400 mb-6"
+            <motion.div
+              className="text-2xl md:text-3xl text-primary-400 mb-6 h-12 flex items-center justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              {personalInfo.title}
-            </motion.h2>
+              <Typewriter
+                strings={[
+                  'Desenvolvedor Full Stack JavaScript',
+                  'Integrações com AWS',
+                  'Developer NodeJS | ReactJS | VueJS',
+                  'Banco de Dados: PostgreSQL • MySQL • MongoDB',
+                  'Obsessed with Clean Code and Test Driven Development',
+                  'DevOps Engineer',
+                ]}
+                className="text-primary-400"
+                speed={50}
+                backSpeed={30}
+                backDelay={2000}
+                loop={true}
+              />
+            </motion.div>
 
             <motion.p
               className="text-xl text-gray-300 mb-8"
@@ -118,20 +133,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              <Link
-                to="/perfil"
-                className="inline-block bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 mr-4"
-              >
-                Ver Currículo
-              </Link>
-              <a
-                href="/Henrique_Hoinacki_CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200"
-              >
-                Download CV
-              </a>
+              <CurriculumButtons />
             </motion.div>
           </motion.div>
         </section>

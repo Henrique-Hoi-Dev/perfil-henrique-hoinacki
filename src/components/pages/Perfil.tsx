@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import Header from '../organisms/Header';
+import CurriculumButtons from '../molecules/CurriculumButtons';
 import {
   personalInfo,
   summary,
@@ -60,14 +61,7 @@ const Perfil = () => {
               📍 {personalInfo.location} | 📧 {personalInfo.email} | 📱{' '}
               {personalInfo.phone}
             </p>
-            <a
-              href="/Henrique_Hoinacki_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200"
-            >
-              📄 Download CV Completo
-            </a>
+            <CurriculumButtons />
           </motion.div>
 
           {/* About */}

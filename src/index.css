@@ -24,4 +24,21 @@
   .card {
     @apply bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700;
   }
+
+  /* Typewriter cursor styles */
+  .typed-cursor {
+    @apply text-primary-400;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
 }
