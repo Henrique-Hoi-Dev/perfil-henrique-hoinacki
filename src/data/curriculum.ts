@@ -128,25 +128,25 @@ export const projects: Project[] = [
   {
     name: 'Mirae – Site de Corretora',
     description:
-      'Desenvolvimento de site utilizando Next.js com TypeScript. Implementação de backoffice com Strapi, permitindo a edição dinâmica de textos e imagens pelo cliente.',
+      'Desenvolvimento de site utilizando Next.js com TypeScript na Ília Digital. Implementação de backoffice com Strapi, permitindo a edição dinâmica de textos e imagens pelo cliente.',
     technologies: ['Next.js', 'TypeScript', 'Strapi', 'React'],
   },
   {
     name: 'Asics – Projeto de Cashback',
     description:
-      'Atuação na manutenção e aprimoramento do sistema de cashback. Implementação de melhorias para integração com a VTEX, possibilitando a realização de transações de cashback através dos giftcards da plataforma.',
+      'Atuação na manutenção e aprimoramento do sistema de cashback na Ília Digital. Implementação de melhorias para integração com a VTEX, possibilitando a realização de transações de cashback através dos giftcards da plataforma.',
     technologies: ['VTEX', 'Cashback', 'Integração de APIs', 'JavaScript'],
   },
   {
     name: 'Asics – MGM Member Get Member',
     description:
-      'Desenvolvimento de sistema de indicação onde, a partir do compartilhamento de um link (utm) em campanha, o usuário que indicou ganha bônus quando o indicado efetua uma compra.',
+      'Desenvolvimento de sistema de indicação na Ília Digital onde, a partir do compartilhamento de um link (utm) em campanha, o usuário que indicou ganha bônus quando o indicado efetua uma compra.',
     technologies: ['Sistema de Indicação', 'UTM', 'Campanhas', 'JavaScript'],
   },
   {
     name: 'Asics – Site para Profissionais de Esporte',
     description:
-      'Criação de um site personalizado para profissionais de esporte com perfis individuais. Desenvolvimento de funcionalidades para indicação de produtos, publicação de artigos e redes sociais.',
+      'Criação de um site personalizado para profissionais de esporte com perfis individuais na Ília Digital. Desenvolvimento de funcionalidades para indicação de produtos, publicação de artigos e redes sociais.',
     technologies: [
       'Perfis Personalizados',
       'Sistema de Artigos',
@@ -157,7 +157,7 @@ export const projects: Project[] = [
   {
     name: 'Asics – Ferramenta de Correção de Divergência em Transações VTEX',
     description:
-      'Concepção e desenvolvimento de uma ferramenta para identificar e corrigir divergências entre o saldo do sistema de cashback e o saldo dos giftcards na VTEX. Implementação de consulta via e-mail ou CPF, permitindo correção automática com um clique.',
+      'Concepção e desenvolvimento de uma ferramenta na Ília Digital para identificar e corrigir divergências entre o saldo do sistema de cashback e o saldo dos giftcards na VTEX. Implementação de consulta via e-mail ou CPF, permitindo correção automática com um clique.',
     technologies: ['VTEX', 'Sistema de Correção', 'Automação', 'JavaScript'],
   },
 ];

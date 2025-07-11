@@ -129,6 +129,9 @@ const Perfil = () => {
             <h3 className="text-2xl font-bold text-white mb-6">
               Projetos Destacados
             </h3>
+            <p className="text-gray-400 mb-6 italic">
+              Principais projetos na Ília Digital:
+            </p>
             <div className="grid md:grid-cols-2 gap-6">
               {projects.map((project, index) => (
                 <motion.div
@@ -142,7 +145,11 @@ const Perfil = () => {
                   <h4 className="text-xl font-semibold text-white mb-2">
                     {project.name}
                   </h4>
-                  <p className="text-gray-300 mb-4">{project.description}</p>
+                  <p className="text-gray-300 mb-4">
+                    {project.description
+                      .replace(/ na Ília Digital/g, '')
+                      .replace(/ na Ília Digital/g, '')}
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span
